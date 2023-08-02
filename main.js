@@ -38,8 +38,14 @@ for (const str of arrayStrings) {
 // 6
 // Створити масив з 10-ти чисел. Знайти та вивести на екран максимальне значення з масиву
 const arrayTenNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const lastElementIndex = arrayTenNumbers.length - 1;
-console.log(arrayTenNumbers[lastElementIndex]);
+let numberMax = arrayTenNumbers[0];
+
+for (const iteratorEx of arrayTenNumbers) {
+    if (iteratorEx > numberMax) {
+        numberMax = iteratorEx
+    }
+}
+console.log(numberMax);
 // 7
 // Створити масив з 10-ти чисел. Знайти всі парні числа в масиві та вивести їх на екран
 const numbersArrayTen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -49,3 +55,12 @@ for (const doubleNumber of numbersArrayTen) {
       }
       console.log(doubleNumber);
 }
+
+
+
+
+
+// experement
+// 6
+const max = Math.max.apply(null, arrayTenNumbers)
+console.log(max);
