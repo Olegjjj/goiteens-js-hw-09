@@ -64,3 +64,43 @@ for (const doubleNumber of numbersArrayTen) {
 // 6
 const max = Math.max.apply(null, arrayTenNumbers)
 console.log(max);
+
+
+
+
+
+                                            // additional //
+
+// 1
+const arr1 = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
+arr1[arr1.length] = 22;
+console.log(arr1.length);
+// 2
+const arr2 = [1, 2, 3, 4, 5, 6, 7];
+for (const ar2 of arr2) {
+    console.log(ar2);
+    console.log(typeof ar2);
+}
+// 3
+const arr3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let totalArr3 = 0;
+for (const ar3 of arr3) {
+    if (ar3 % 2 === 0) {
+        totalArr3 += ar3;
+      }
+}
+console.log(totalArr3);
+// 4
+arr4 = [1, 2, 3, 4, 5]
+arr5 = [6, 7, 8, 9, 10]
+totalArr4 = 0;
+totalArr5 = 0;
+totalFinal = 0;
+for (const ar4 of arr4) {
+        totalArr4 += ar4;
+}
+for (const ar5 of arr5) {
+        totalArr5 += ar5;
+}
+totalFinal = totalArr4 + totalArr5;
+console.log(totalFinal);
